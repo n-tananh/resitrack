@@ -60,11 +60,14 @@ public class Main {
             choice = scanner.nextLine();
 
             switch (choice) {
-                case "1":
+                case ADD_PERSON:
                     personController.addNewPerson();
                     break;
-                case "2":
+                case SEARCH_PERSON:
                     personController.searchPeopleByName();
+                    break;
+                case DELETE_PERSON:
+                    personController.deletePeopleByName();
                     break;
                 default:
                     System.out.println("Wrong person manage choice!!!");
